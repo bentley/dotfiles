@@ -1,0 +1,4 @@
+XTerm*saveLines: 10000
+XTerm*foreground: #DCDCCC
+XTerm*background: #3F3F3F
+XTerm*loginShell: true

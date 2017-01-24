@@ -1,0 +1,39 @@
+.\" View this document with:
+.\" $ mandoc dotfiles.7 | less
+.\" … or …
+.\" $ preconv dotfiles.7 | groff -mdoc -Tpdf > dotfiles.pdf
+.\"
+.Dd January 24, 2017
+.Dt DOTFILES 7
+.Os
+.Sh NAME
+.Nm dotfiles
+.Nd anthony’s configuration options
+.Sh DESCRIPTION
+This is a non‐exhaustive collection of my local OpenBSD configuration files.
+.Ss Color schemes
+.Bl -tag -width Ds
+.It background color
+.Xr xsetroot 1 ,
+via
+.Pa \(ti/.xsession .
+.It window borders
+.Xr cwmrc 5 .
+.It Xr xterm 1
+.Pa \(ti/.Xresources .
+.It Locale
+UTF‐8,
+via
+.Ev LC_CTYPE
+in
+.Pa \(ti/.profile .
+.El
+.Ss Tools
+.Bl -tag -width Ds
+.It System updates
+.Pa bin/upsnap.sh .
+.It Battery monitoring
+.Xr xbattbar 1 .
+Screen space reserved in
+.Xr cwmrc 5 .
+.El
