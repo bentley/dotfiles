@@ -1,5 +1,3 @@
-xsetroot -solid rgb:24/24/34
-
 setxkbmap -option compose:ralt
 
 xrdb .Xresources

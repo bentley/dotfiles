@@ -1,0 +1,7 @@
+#!/bin/sh
+
+xsetroot -solid rgb:24/24/34
+
+if [ "$DISPLAY" = :0 -o "$DISPLAY" = :0.0 ]; then
+	xconsole -geometry 480x130-0-0 -daemon -notify -verbose -fn fixed -exitOnFail
+fi
