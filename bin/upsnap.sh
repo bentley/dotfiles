@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd $(mktemp -d)
+cd $(mktemp -d || exit 1)
 if [ -f /etc/installurl ]; then
 	< /etc/installurl read mirror
 else
